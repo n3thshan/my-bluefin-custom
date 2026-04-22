@@ -6,11 +6,11 @@ image-version: stable
 
 modules:
   - type: copy
-      src: local/ov08x40.yaml
-      dest: /usr/share/libcamera/ipa/simple/ov08x40.yaml
+    src: local/ov08x40.yaml
+    dest: /usr/share/libcamera/ipa/simple/ov08x40.yaml
       
   - type: copy    
-      src: local/medid.bin
-      dest: /usr/lib/firmware/edid/medid.bin
+    src: local/medid.bin
+    dest: /usr/lib/firmware/edid/medid.bin
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
