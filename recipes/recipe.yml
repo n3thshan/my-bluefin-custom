@@ -12,3 +12,5 @@ modules:
   - type: copy
     src: medid.bin
     dest: /usr/lib/firmware/edid/medid.bin
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
