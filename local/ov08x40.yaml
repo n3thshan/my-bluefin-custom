@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: CC0-1.0
+%YAML 1.1
+---
+version: 1
+algorithms:
+  - BlackLevel:
+  - Awb:
+  - Lut:
+  - Agc:
+  - Ccm:
+      ccms:
+        - ct: 5000
+          ccm: [ 1.05, -0.02, -0.01,
+                -0.03,  0.92, -0.03,
+                -0.01, -0.02,  1.05 ]
+...
