@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+name: my-bluefin-custom
+description: My custom Bluefin image with camera and firmware files
+base-image: ghcr.io/ublue-os/bluefin
+image-version: stable
+
+modules:
+  - type: copy
+    src: ov08x40.yaml
+    dest: /usr/share/libcamera/ipa/simple/ov08x40.yaml
+
+  - type: copy
+    src: medid.bin
+    dest: /usr/lib/firmware/edid/medid.bin
